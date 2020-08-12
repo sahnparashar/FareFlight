@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Fare Flight Tickets</title>
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+    <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"> <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- Bootstrap style -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/datepicker.css" />
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/main-style.css"> 
+</head>
+
+<body>
+    <div class="tm-main-content" id="top">
+        <div class="tm-top-bar-bg"></div>
+        <div class="tm-top-bar" id="tm-top-bar">
+            <!-- Top Navbar -->
+            <div class="container">
+                <div class="row">
+
+                    <nav class="navbar navbar-expand-lg narbar-light">
+                        <a class="navbar-brand mr-auto" href="#">
+                            Fare Flight Tickets
+                        </a>
+                        <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse"
+                            data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
+                            <ul class="navbar-nav ml-auto mr-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Flights <span
+                                            class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Hotels</a>
+                                </li>
+                            </ul>
+                            <div class="customer-support">
+                                <i class="fa  fa-phone tm-color-primary tm-margin-b-20 blinking"></i>
+                                <a href="tel:+1-999-000-1234" class="blinking pl-1">Customer support!</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="tm-section tm-bg-img" id="tm-section-1">
+            <div class=" ie-container-width-fix-2">
+                <div class="container ie-h-align-center-fix">
+                    <div class="row mb-3">
+                        <div class="col-md-12 text-center text-light">
+                            <h1>Make the fondest travel memories!</h1>
+                            <h4>Find Flights to 1000+ Destinations worldwide</h4>
+                        </div>
+                    </div>
+                    <div class="row tm-bg-white rounded">
+                        <div class="col-xs-12 ml-auto mr-auto ie-container-width-fix">
+                            <form action="index.html" method="get" class="tm-search-form tm-section-pad-2">
+                                <div class="form-row tm-search-form-row">
+                                    <div class="form-group tm-form-element tm-form-element-100">
+                                        <i class="fa fa-map-marker fa-2x tm-form-element-icon"></i>
+                                        <input disabled name="city" type="text" class="form-control" id="inputCity"
+                                            placeholder="Type your destination...">
+                                    </div>
+                                    <div class="form-group tm-form-element tm-form-element-50">
+                                        <i class="fa fa-calendar fa-2x tm-form-element-icon"></i>
+                                        <input disabled name="check-in" type="text" class="form-control"
+                                            id="inputCheckIn" placeholder="Check In">
+                                    </div>
+                                    <div class="form-group tm-form-element tm-form-element-50">
+                                        <i class="fa fa-calendar fa-2x tm-form-element-icon"></i>
+                                        <input disabled name="check-out" type="text" class="form-control"
+                                            id="inputCheckOut" placeholder="Check Out">
+                                    </div>
+                                </div>
+                                <div class="form-row tm-search-form-row">
+                                    <div class="form-group tm-form-element tm-form-element-100">
+                                        <i class="fa fa-user fa-2x tm-form-element-icon"></i>
+                                        <input disabled name="name" type="text" class="form-control" id="inputName"
+                                            placeholder="Type your name...">
+                                    </div>
+                                    <div class="form-group tm-form-element tm-form-element-100">
+                                        <i class="fa fa-phone fa-2x tm-form-element-icon"></i>
+                                        <input disabled name="phoneNumber" type="number" class="form-control"
+                                            id="inputPhoneNumber" placeholder="Type your phone number...">
+                                    </div>
+                                    <div class="form-group tm-form-element tm-form-element-100">
+                                        <i class="fa fa-envelope fa-2x tm-form-element-icon"></i>
+                                        <input disabled name="emailAddress" type="email" class="form-control"
+                                            id="inputEmailAddress" placeholder="Type your email address...">
+                                    </div>
+
+                                    <div class="form-group tm-form-element tm-form-element-2 ml-auto mr-auto">
+                                        <button disabled type="submit"
+                                            class="btn btn-primary tm-btn-search rounded">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tm-section tm-position-relative">
+            <div class="container pt-4">
+                <div class="row text-center">
+                    <article class="col-sm-12 col-md-3 col-lg-3 col-xl-3 tm-article">
+                        <i class="fa tm-fa-6x fa-clock-o tm-color-primary tm-margin-b-20"></i>
+                        <h3 class="tm-color-primary tm-article-title-1">CALL US 24X7</h3>
+                        <p>Your travel buddy available round the clock.</p>
+                    </article>
+                    <article class="col-sm-12 col-md-3 col-lg-3 col-xl-3 tm-article">
+                        <i class="fa tm-fa-6x Example of ticket fa-ticket tm-color-primary tm-margin-b-20"></i>
+                        <h3 class="tm-color-primary tm-article-title-1">CARE FOR FARE</h3>
+                        <p>Get the cheapest deals available on the planet.</p> 
+                    </article>
+                    <article class="col-sm-12 col-md-3 col-lg-3 col-xl-3 tm-article">
+                        <i class="fa tm-fa-6x fa-tag tm-color-primary tm-margin-b-20"></i>
+                        <h3 class="tm-color-primary tm-article-title-1">EXCLUSIVE OFFERS</h3>
+                        <p>If you cant see it, that doesn't mean it doesn't exist. Get exclusive deals from us.</p>
+                    </article>
+                    <article class="col-sm-12 col-md-3 col-lg-3 col-xl-3 tm-article">
+                        <i class="fa tm-fa-6x fa-universal-access tm-color-primary tm-margin-b-20"></i>
+                        <h3 class="tm-color-primary tm-article-title-1">EASY BOOKING</h3>
+                        <p>Get hassle free booking in no time.</p> 
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="tm-section tm-section-pad tm-bg-gray" id="tm-section-4">
+            <div class="row">
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip">
+                        <div class="mainflip flip-0">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center d-flex align-items-center justify-content-center">
+                                        <H4>OUR BACKGROUND</H4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <h4 class="card-title">OUR BACKGROUND</h4>
+                                        <p class="card-text">We are a group of people who are well-versed in the fun and
+                                            rigors of traveling. Our travel agency came together to help other people
+                                            plan and book their dream vacations. We have over 40 years of travel
+                                            planning between us!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center d-flex align-items-center justify-content-center">
+                                        <H4>OUR SERVICES</H4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <h4 class="card-title">OUR SERVICES</h4>
+                                        <p class="card-text">Whether you're looking for a cruise, plane tickets,
+                                            accommodations, or the whole package, we have you covered! Simple tell one
+                                            of our specialists where you want to go and we'll help you figure out the
+                                            rest. We work directly with other companies to get the best deals.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center d-flex align-items-center justify-content-center">
+                                        <H4>SATISFACTION GUARANTEED</H4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <h4 class="card-title">SATISFACTION GUARANTEED</h4>
+                                        <p class="card-text">While working with us, we want you to be completely happy
+                                            with
+                                            the experience. If you have questions about us, our services, or even travel
+                                            tips, get in touch! We hope you continue to book with us for many years to
+                                            come.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer class="">
+        <div class="container-fluid">
+            <div class="row  tm-bg-dark-blue text-light">
+                <div class="col-lg-12 col-xs-12 d-flex justify-content-center mt-3">
+                        <a href="https://goo.gl/maps/njJdQVMg4ZGV38p3A" target="_blank" class="text-secondary m-1 address text-center">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            1600 Pennsylvania Avenue NW Washington, D.C.
+                        </a>
+                </div>
+                <div class="col-lg-12 col-xs-12 d-flex justify-content-center">
+                        <a href="tel:+1-999-000-1234" class="text-light m-1">
+                            <i class="fa fa-mobile" aria-hidden="true"></i> +1-999-000-1234 </a>
+                        &nbsp;&nbsp;
+                        <a href="mailto:info@fareflighticket.com" class="text-light m-1">
+                            <i class="fa fa-envelope" aria-hidden="true"></i> info@fareflighticket.com</a>
+                </div>
+                <div class="col-lg-12 col-xs-12 d-flex justify-content-center mb-3">
+
+                    <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item">
+                            <a href="#" target="_blank" class="text-secondary m-1">
+                                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" target="_blank" class="text-secondary m-1">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" target="_blank" class="text-secondary m-1">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" target="_blank" class="text-secondary m-1">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row bg-light text-dark">
+                <p class="col-sm-12 text-center tm-font-light text-dark  p-2 tm-margin-b-0">
+                    Copyright &copy; <span class="tm-current-year">2020</span> |
+                    Fare Flight Tickets
+                </p>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade hide" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title  ml-auto mr-auto" id="exampleModalLongTitle">ANNOUNCEMENT</h3>
+                </div>
+                <div class="modal-body text-center">
+                    <p>
+                        Welcome! We have great deals available over the phone.
+                        <br />
+
+                        Call us and get everything you need to meet your travel expectations.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary rounded" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal End-->
+    <!-- load JS files -->
+    <script src="js/jquery-1.11.3.min.js"></script> <!-- jQuery (https://jquery.com/download/) -->
+    <script src="js/popper.min.js"></script> <!-- https://popper.js.org/ -->
+    <script src="js/bootstrap.min.js"></script> <!-- https://getbootstrap.com/ -->
+    <script src="js/datepicker.min.js"></script> <!-- https://github.com/qodesmith/datepicker -->
+    <script src="js/jquery.singlePageNav.min.js"></script>
+    <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
+    <script src="slick/slick.min.js"></script> <!-- http://kenwheeler.github.io/slick/ -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            function alignModal() {
+                var modalDialog = $(this).find(".modal-dialog");
+                /* Applying the top margin on modal dialog to align it vertically center */
+                modalDialog.css("margin-top", Math.max(0, ($(window).height() - modalDialog.height()) / 2));
+            }
+            // Align modal when it is displayed
+            $(".modal").on("shown.bs.modal", alignModal);
+
+            // Align modal when user resize the window
+            $(window).on("resize", function () {
+                $(".modal:visible").each(alignModal);
+            });
+            $("#exampleModalCenter").modal('show');
+        });
+    </script>
+</body>
+
+</html>
